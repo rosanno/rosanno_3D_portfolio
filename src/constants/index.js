@@ -241,7 +241,6 @@ const projects = [
       },
     ],
     image: clothing,
-    live_link: "https://clothing-store-9fx7.vercel.app/",
     source_code_link: "https://github.com/rosanno/clothing-store",
   },
   {
