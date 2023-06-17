@@ -59,14 +59,14 @@ const Hero = () => {
               <BsGithub className="text-lg" />
               <span>github</span>
             </Link>
-            <Link
+            {/* <Link
               to="https://www.linkedin.com/in/rosanno-macabuhay-a8469227b/"
               target="_blank"
               className="resume flex items-center gap-3 mt-7"
             >
               <AiOutlineLinkedin className="text-lg" />
               <span>linkedIn</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
