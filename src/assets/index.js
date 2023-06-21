@@ -37,6 +37,7 @@ import yariga from "./yariga.png";
 import musichubs from "./musichubs.png"
 import weather from "./weather.png"
 import airbnb from "./airbnb.png"
+import realtimemessenger from "./realtimemessenger.png";
 
 export {
   logo,
@@ -74,5 +75,6 @@ export {
   yariga,
   musichubs,
   weather,
-  airbnb
+  airbnb,
+  realtimemessenger,
 };

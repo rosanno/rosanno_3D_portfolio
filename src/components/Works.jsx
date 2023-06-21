@@ -17,22 +17,20 @@ const ProjectCard = ({
   live_link,
   source_code_link,
 }) => {
-  const [descLength, setDescLength] = useState(180);
-
-  console.log(live_link !== null)
+  const [descLength, setDescLength] = useState(100);
 
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full hover:scale-105 cursor-default transition duration-300">
+      <div className="bg-tertiary p-5 rounded-md sm:w-[360px] w-full hover:scale-105 cursor-default transition duration-300">
         <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+          <img src={image} alt="project_image" className="w-full h-full object-cover rounded-md" />
 
-          <div className={`absolute inset-0 flex ${live_link !== "" ? "justify-between" : "justify-end"} m-3 card-img_hover`}>
-            {live_link !== "" ? (
+          <div
+            className={`absolute inset-0 flex ${
+              live_link !== "" ? "justify-between" : "justify-end"
+            } m-3 card-img_hover`}
+          >
+            {live_link ? (
               <div
                 onClick={() => window.open(live_link, "_blank")}
                 className="bg-rose-500/60 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -44,43 +42,30 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
+              <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
             </div>
           </div>
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3 className="text-white font-bold text-base">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">
             {description.slice(0, descLength)}
-            {descLength === 180 ? (
-              <span
-                onClick={() => setDescLength(description.lenght)}
-                className="text-[#E94560] cursor-pointer"
-              >
+            {descLength === 100 ? (
+              <span onClick={() => setDescLength(description.lenght)} className="text-[#E94560] cursor-pointer">
                 ...read more
               </span>
             ) : (
-              <span
-                onClick={() => setDescLength(180)}
-                className="text-[#E94560] cursor-pointer"
-              >
+              <span onClick={() => setDescLength(100)} className="text-[#E94560] cursor-pointer">
                 <br /> show less
               </span>
             )}
           </p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 grid grid-cols-2 gap-2">
           {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
+            <p key={`${name}-${tag.name}`} className={`text-sm ${tag.color}`}>
               #{tag.name}
             </p>
           ))}

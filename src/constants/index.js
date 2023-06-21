@@ -21,6 +21,7 @@ import {
   musichubs,
   weather,
   airbnb,
+  realtimemessenger,
   vscode,
   visualstudio,
   postman,
@@ -184,24 +185,21 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    testimonial: "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -354,6 +352,40 @@ const projects = [
     image: airbnb,
     live_link: "",
     source_code_link: "https://github.com/rosanno/airbnb-clone2",
+  },
+  {
+    name: "Realtime messenger",
+    description:
+      "Realtime Messenger is a web application built using Next.js, Prisma, MongoDB, TypeScript, and Tailwind CSS. It aims to replicate the core functionality of the popular Facebook Messenger platform, allowing users to send messages, create chat groups, and engage in real-time conversations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pusher",
+        color: "green-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: realtimemessenger,
+    live_link: "https://realtime-messenger-six.vercel.app/",
+    source_code_link: "https://github.com/rosanno/realtime-messenger",
   },
 ];
 
