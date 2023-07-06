@@ -49,10 +49,13 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-base">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">
+          <p className="mt-2 text-secondary text-xs">
             {description.slice(0, descLength)}
             {descLength === 100 ? (
-              <span onClick={() => setDescLength(description.lenght)} className="text-[#E94560] cursor-pointer">
+              <span
+                onClick={() => setDescLength(description.lenght)}
+                className="text-[#E94560] cursor-pointer"
+              >
                 ...read more
               </span>
             ) : (
@@ -63,7 +66,7 @@ const ProjectCard = ({
           </p>
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-2">
+        <div className="mt-2 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p key={`${name}-${tag.name}`} className={`text-sm ${tag.color}`}>
               #{tag.name}

@@ -14,22 +14,19 @@ import {
   nodejs,
   mongodb,
   git,
-  docker,
   camalig,
   clothing,
   yariga,
   musichubs,
   weather,
-  airbnb,
   realtimemessenger,
   vscode,
-  visualstudio,
   postman,
   materialui,
   vue,
   mysql,
   csharp,
-  java,
+  moviemania,
 } from "../assets";
 
 export const navLinks = [
@@ -138,19 +135,9 @@ const technologies = [
     icon: csharp,
   },
   {
-    category: "language",
-    name: "Java",
-    icon: java,
-  },
-  {
     category: "tools",
     name: "vscode",
     icon: vscode,
-  },
-  {
-    category: "tools",
-    name: "visualstudio",
-    icon: visualstudio,
   },
   {
     category: "tools",
@@ -161,11 +148,6 @@ const technologies = [
     category: "tools",
     name: "git",
     icon: git,
-  },
-  {
-    category: "tools",
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -185,21 +167,24 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial: "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -328,32 +313,6 @@ const projects = [
     source_code_link: "https://github.com/rosanno/weather-app",
   },
   {
-    name: "Airbnb clone",
-    description:
-      "Airbnb clone web app is a platform that mimics the functionality and features of the popular travel and accommodation booking website, Airbnb. It allows users to search and book lodging options such as apartments, houses, villas, and other vacation rentals from hosts worldwide.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: airbnb,
-    live_link: "",
-    source_code_link: "https://github.com/rosanno/airbnb-clone2",
-  },
-  {
     name: "Realtime messenger",
     description:
       "Realtime Messenger is a web application built using Next.js, Prisma, MongoDB, TypeScript, and Tailwind CSS. It aims to replicate the core functionality of the popular Facebook Messenger platform, allowing users to send messages, create chat groups, and engage in real-time conversations.",
@@ -386,6 +345,33 @@ const projects = [
     image: realtimemessenger,
     live_link: "https://realtime-messenger-six.vercel.app/",
     source_code_link: "https://github.com/rosanno/realtime-messenger",
+  },
+  {
+    name: "MovieMania (Bootcamp project)",
+    description:
+      "MovieMania is a web application built using React, Redux Toolkit, Tailwind CSS, and TMDB API. It provides users with a platform to browse and discover information about movies.",
+    tags: [
+      {
+        name: "react.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tmdb api",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "reduxjs/toolkit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: moviemania,
+    live_link: "https://moviemania-nine.vercel.app/",
+    source_code_link: "https://github.com/rosanno/moviemania",
   },
 ];
 

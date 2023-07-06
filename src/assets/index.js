@@ -35,9 +35,9 @@ import camalig from "./company/lgu-camalig.png";
 import clothing from "./clothing.png";
 import yariga from "./yariga.png";
 import musichubs from "./musichubs.png"
-import weather from "./weather.png"
-import airbnb from "./airbnb.png"
+import weather from "./weather.png";
 import realtimemessenger from "./realtimemessenger.png";
+import moviemania from "./moviemania.png";
 
 export {
   logo,
@@ -75,6 +75,6 @@ export {
   yariga,
   musichubs,
   weather,
-  airbnb,
   realtimemessenger,
+  moviemania,
 };
